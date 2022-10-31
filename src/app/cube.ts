@@ -3,7 +3,9 @@ import { BoxGeometry, Mesh, MeshStandardMaterial } from "three";
 class Cube extends Mesh {
   constructor(
     readonly geometry: BoxGeometry = new BoxGeometry(),
-    readonly material: MeshStandardMaterial = new MeshStandardMaterial()
+    readonly material: MeshStandardMaterial = new MeshStandardMaterial({
+      color: 0x1d1d1d,
+    })
   ) {
     super();
     this.geometry = geometry;

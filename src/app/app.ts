@@ -8,6 +8,7 @@ import {
   ACESFilmicToneMapping,
   sRGBEncoding,
   PointLight,
+  AmbientLight,
 } from "three";
 import Cube from "./cube";
 
@@ -34,6 +35,9 @@ scene.add(cube);
 const pointLight = new PointLight();
 pointLight.position.set(9, 9, 9);
 scene.add(pointLight);
+
+const ambientLight = new AmbientLight();
+scene.add(ambientLight);
 
 function animate() {
   requestAnimationFrame(animate);

@@ -1,14 +1,14 @@
 {
   "name": "three-tutorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tutorial practice for three JS library",
   "scripts": {
     "prebuild": "rm -rf dist & rm -rf .parcel-cache",
     "build": "npx parcel build ./public/index.html",
     "start": "(npx parcel ./public/index.html --port 3000) & npx parcel watch  ./public/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anoop-LogCat",
   "license": "ISC",
   "dependencies": {
     "three": "^0.146.0"
